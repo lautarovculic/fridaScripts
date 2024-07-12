@@ -45,7 +45,7 @@ Each script is designed for specific use cases. Refer to the individual script d
     ```sh
     frida -U -f com.example.app -l script.js --no-pause
     ```
-
+## READ THE SCRIPT CONTENT, YOU MAY CHANGE THE PACKAGE NAME OF THE APP OR OTHER INFO
 
 ## Contributing
 
