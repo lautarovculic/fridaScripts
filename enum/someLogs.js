@@ -5,16 +5,16 @@ Java.perform(function () {
     
     function logInterceptor(logLevel, logMethod) {
         return function (tag, msg) {
-            // Filtrar por paquete específico
+            // Filter by package
             if (currentApp.getPackageName() === targetPackageName) {
                 console.log("[" + logLevel + "] " + tag + ": " + msg);
             }
-            // Llamar al método original
+            // Call original method
             return logMethod.call(this, tag, msg);
         };
     }
     
-    // Enganchar a los métodos de log de diferentes niveles
+    // Hook logs in different levels
     Log.d.overload('java.lang.String', 'java.lang.String').implementation = logInterceptor('d', Log.d);
     Log.i.overload('java.lang.String', 'java.lang.String').implementation = logInterceptor('i', Log.i);
     Log.w.overload('java.lang.String', 'java.lang.String').implementation = logInterceptor('w', Log.w);
