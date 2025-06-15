@@ -51,10 +51,6 @@ Each script is designed for specific use cases. Refer to the individual script d
 
 Feel free to contribute to this repository by submitting a pull request. Please follow the contribution guidelines.
 
-## License
-
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
 ## Contact
 
 For any inquiries or support, please contact me at [lautaro@lautarovculic.com](mailto:lautaro@lautarovculic.com).
