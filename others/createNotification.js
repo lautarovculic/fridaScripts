@@ -1,6 +1,6 @@
 // Android ≤ 12 -> works perfectly
 // Android 13+ require android.permission.POST_NOTIFICATION
-// if app targetSdk < 33, may come "allowd" due compat
+// if app targetSdk < 33, may come "allow" due compat
 // if app targetSdk 33+ and permission was denied then notify() es ignorado.
 
 Java.perform(function () {
